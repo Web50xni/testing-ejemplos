@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <!-- pico css -->
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"/>
+        <link rel="stylesheet" href="{% static 'flights/styles.css' %}"/>
+    </head>
+    <body class="container">
+       <main class="container">
+        {% block body %}
+        {% endblock %}
+       </main>
+    </body>
+</html>
